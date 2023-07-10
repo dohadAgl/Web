@@ -1,0 +1,28 @@
+{{> site-nav }}
+{{>index-img}}
+
+
+  <h3 class="haber-header">GÜNCEL HABER VE DUYURULAR</h3>
+  <br>
+<div class="haber-all-box">
+
+{{#each haber}}
+      <div class="haber-row-box">
+        <img src="{{this.images}}" alt="">
+        <div>
+          <p>{{this.tittle}}</p>
+          
+          <span>LGA SİSTEM ELEKTRONİK</span>
+          <a href="/haber/{{this.id}}">HABERİ GÖR</a>
+
+
+        </div>
+      </div>
+
+{{/each}}
+
+
+    
+</div>
+
+  {{> site-footer }}

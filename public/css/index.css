@@ -1,0 +1,268 @@
+.index-img {
+    background-image: url('../img/Frameturuncu.jpg');
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    color: white;
+}
+
+.index-img h1 {
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+.caru-control{
+    max-height: 270px;
+}
+.index-info-top {
+    text-align: center;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+
+.index-info-top img {
+    width: 100%;
+    min-width: 300px;
+    max-width: 360px;
+}
+
+.index-info-text {
+    min-width: 300px;
+    font-size: 19px;
+    font-weight: 400;
+
+}
+.index-info-text h1 {
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+}
+
+.warning-info-top {
+    text-align: center;
+    min-width: 250px;
+}
+.warning-info-top img {
+    width: 100%;
+    min-width: 250px;
+    max-width: 300px;
+    margin-top: 50px;
+}
+
+.warning-info-text h1 {
+    font-size: 28px;
+
+    font-weight: 400;
+    color: rgb(20, 59, 131);
+    margin-top: 30px;
+}
+.warning-info-text {
+    min-width: 300px;
+    font-size: 19px;
+    font-weight: 400;
+
+}
+
+.warning-fay-top {
+    text-align: center;
+    min-width: 250px;
+}
+
+.warning-fay-top img {
+    width: 100%;
+ 
+    margin-top: 10px;
+}
+
+
+
+
+.warning-fay-text h1 {
+    font-size: 28px;
+
+    font-weight: 400;
+    color: rgb(20, 59, 131);
+    margin-top: 30px;
+}
+.warning-fay-text {
+    min-width: 300px;
+    font-size: 19px;
+    font-weight: 400;
+
+}
+
+
+.index-info1-top iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.index-info2-text h1 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 300;
+    color: black;
+    padding: 20px;
+}
+
+.index-info2-text p {
+    font-size: 19px;
+    text-align: center;
+
+}
+
+.index-info1-top {
+    text-align: center;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+
+.index-info1-top img {
+    width: 100%;
+    min-width: 300px;
+
+}
+
+.middle-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.middle-card div {
+    width: 340px;
+    height: 420px;
+    background-color: rgba(226, 226, 230, 0.859);
+    border-radius: 17px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 7px rgba(226, 226, 230, 0.859);
+}
+
+.middle-card img {
+    width: 90%;
+    height: 150px;
+    border-radius: 7px;
+}
+
+.middle-card p {
+    font-size: 19px;
+    color: #191919;
+    margin-top: 20px;
+    padding: 10px;
+
+
+}
+
+.middle-card button {
+    min-width: 140px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background-color: rgba(118, 136, 190, 0.899);
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: 2px;
+    padding: 0 10px;
+}
+
+
+
+.pdf {
+    width: 87%;
+
+    margin: auto;
+    background-color: rgba(72, 90, 232, 0.941);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+}
+
+.pd1 img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+}
+
+.pd2 {
+    width: 50%;
+    margin: auto;
+    min-width: 360px;
+
+}
+
+.pd1 {
+    width: 30%;
+    min-width: 360px;
+    margin: auto;
+}
+
+.pd2 h2 {
+    font-size: 26px;
+    font-weight: 400;
+    color: white;
+}
+
+.pd2 p {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+.pd3{
+    width: 20%;
+    min-width: 200px;
+    margin: auto;
+}
+.pd3 i{
+  font-size: 50px;
+    color: white;
+}
+
+.marmara img{
+    width: 90%;
+    max-height:auto;
+
+}
+.circle-label{
+z-index: 30000;
+    width: 130px;
+    height: 30px;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    margin-right: 1000px;
+text-align: left;
+
+}
+
+.circle-label b{
+    color: transparent;
+}
+.circlep{
+   position: relative;
+}
+.circles-label{
+    z-index: 30000;
+    width: 130px;
+    height: 30px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-right: 1000px;
+text-align: left;
+
+}
+.circles-label b{
+    color: transparent;
+}
+
+
+

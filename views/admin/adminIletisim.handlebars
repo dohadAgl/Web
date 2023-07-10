@@ -1,0 +1,71 @@
+
+
+
+<div style="display: flex;">
+{{>admin-nav  }}
+
+
+<div class="right-box">
+
+    {{#if sessionFlash.message}}
+<div class="{{sessionFlash.type}}">{{sessionFlash.message}}</div>
+{{/if}}
+
+
+
+
+<div>
+    <div >
+    <h3>İletişim</h3>
+<form action="/admin/iletisim" method="POST" enctype="multipart/form-data">
+ {{#each iletisim}}
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Whatsapp No:</label>
+    <input type="text" name="whatsaap" class="form-control" id="exampleFormControlInput1" placeholder="Whatsapp No:" value="{{this.whatsaap}}">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">TEL NO:</label>
+    <input type="text" name="phone" class="form-control" id="exampleFormControlInput1" placeholder="tel no" value="{{this.phone}}" >
+  </div>
+
+    <div class="form-group">
+    <label for="exampleFormControlInput1">email</label>
+    <input type="text" name="email" class="form-control" id="exampleFormControlInput1" placeholder="email" value="{{this.email}}" >
+  </div>
+
+    <div class="form-group">
+    <label for="exampleFormControlInput1">instagram</label>
+    <input type="text" name="instagram" class="form-control" id="exampleFormControlInput1" placeholder="instagram" value="{{this.instagram}}" >
+  </div>
+
+    <div class="form-group">
+    <label for="exampleFormControlInput1">twitter</label>
+    <input type="text" name="twitter" class="form-control" id="exampleFormControlInput1" placeholder="twitter" value="{{this.twitter}}" >
+  </div>
+
+    <div class="form-group">
+    <label for="exampleFormControlInput1">facebook</label>
+    <input type="text" name="facebook" class="form-control" id="exampleFormControlInput1" placeholder="facebook" value="{{this.facebook}}" >
+  </div>
+ {{/each}}
+
+<br>
+<button id="haberbtn" type="submit">Güncelle</button>
+</form> 
+</div>
+
+
+
+<div>
+   
+  
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>

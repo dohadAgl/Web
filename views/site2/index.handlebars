@@ -1,0 +1,129 @@
+{{>site-nav}}
+{{>index-img}}
+
+{{#each data}}
+
+
+
+    
+<div class="container">
+    <div class="row">
+         
+     <div class="warning-info-top col-md-12 col-lg-5 d-md-block d-lg-none"><img src="/img/ort.png" alt=""></div>
+        <div class="warning-info-text  col-md-12 col-lg-7">
+            <h1>{{this.title}}</h1>
+            <p>{{this.p1}}</p>
+            <p>{{this.p2}}</p>
+
+            <ul class="index-li">
+                <li>
+                    <b>{{this.s1b}}</b>
+                    {{this.s1m}}
+                </li>
+                <li>
+                    <b>{{this.s2b}}</b>
+                      {{this.s2m}}
+                </li>
+                <li><b>{{this.s3b}}</b> {{this.s3m}}</li>
+                <li><b>{{this.s4b}}</b> {{this.s4m}}</li>
+            </ul>
+        </div>
+      <div class="warning-info-top col-md-12 col-lg-5 d-none d-md-none d-lg-block"><img src="/img/orta.png" alt=""></div>
+
+    </div>
+</div>
+<br><br>
+
+<div class="container">
+    <div class="middle-card row">
+        <div class="col-6">
+            <img src="/img/card1İmg.png" alt="">
+            <p>{{this.testEt}}</p>
+            <a href="/similasyon">
+                <button>TEST ET</button></a>
+        </div>
+        <div class="col-6">
+            <img src="/img/nasil.jpg" alt="">
+            <p>{{this.nasilK}}</p>
+            <a href="/urunler">
+                <button>Nasıl Kullanabilirim</button></a>
+        </div>
+        <div class="col-6">
+            <img src="/img/hakkizda1.jpg" alt="">
+            <p>{{this.bilgiEdin}}</p>
+            <a href="/similasyon">
+                <button>Bigi Edin</button></a>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="index-info1-top  col-md-12 col-lg-6">
+            <iframe src="https://www.youtube.com/embed/DxS3RF2HOEs" title="DEPREM NASIL OLUŞUR?" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="index-info2-text col-md-12 col-lg-6 p-4">
+            <h1>{{this.vb}}</h1>
+
+            <p>{{this.vm}}​</p>
+        </div>
+
+    </div>
+</div>
+<br><br>
+<div class="container">
+
+    <div class="marmara row">
+        <div class="col-12">
+            <img data-enlargable="fullImage" src="/img/marmaraDaate.png" alt="infografik-resim">
+        </div>
+    </div>
+</div>
+
+
+
+<br><br>
+<div class="pdf ">
+    <div class="pd1"><img src="/img/pdf.png" alt=""></div>
+
+    <div class="pd2">
+        <h2>PDF İNDİR</h2>
+        <p>{{this.pdf}}</p>
+    </div>
+    <div class="pd3">
+        <i class="bi bi-file-earmark-arrow-down-fill"></i>
+    </div>
+</div>
+{{/each}}
+<br><br>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-sm-12 col-lg-4">
+            <div class="sagDiv rounded-3">
+                <h3 class="mb-5">İLETİŞİM FORMU</h3>
+                <div class="container">
+                    <input class="form-control mb-3" type="text" placeholder="Adınız">
+                    <input class="form-control mb-3" type="text" placeholder="Email Adresiniz">
+                    <textarea class="form-control mb-3" rows="5" placeholder="Lütfen mesajınızı giriniz"></textarea>
+                    <button class="btn btn-success btn-lg">Gönder</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-8">
+            <div class="solDiv">
+                <iframe class="iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12051.107977228696!2d28.801789704236995!3d40.964463944478595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa2562ce39337%3A0x3f6d122b6c139c06!2zWWXFn2lsa8O2eSwgTmFpbWEgU2suIE5vOjI1LCAzNDE0OSBCYWvEsXJrw7Z5L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1683214275766!5m2!1str!2str"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<br><br>
+{{>site-footer}}
+

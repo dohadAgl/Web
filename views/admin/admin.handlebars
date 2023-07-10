@@ -1,0 +1,81 @@
+
+
+
+<div style="display: flex;">
+{{>admin-nav  }}
+
+
+<div class="right-box">
+
+    {{#if sessionFlash.message}}
+<div class="{{sessionFlash.type}}">{{sessionFlash.message}}</div>
+{{/if}}
+
+
+
+
+<div>
+    <div >
+    <h3>Haber Ekle</h3>
+<form action="/admin/haber" method="POST" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Kısa Başlık</label>
+    <input type="text" name="tittle" class="form-control" id="exampleFormControlInput1" placeholder="Lorem İpsum........">
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Video Url</label>
+    <input type="text" name="videourl" class="form-control" id="exampleFormControlInput1" placeholder="htttps:///.....">
+  </div>
+
+
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Haber Detay</label>
+    <textarea id="textare" name="admintext" class="form-control"  rows="8"></textarea>
+  </div>
+<br>
+<input type="file" name="images">
+<br><br>
+<button id="haberbtn" type="submit">ekle</button>
+
+</form> 
+
+</div>
+
+
+
+<div  >
+     <h3>Yayında Olan Haberler</h3>
+     <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">İd</th>
+      <th scope="col">Ad</th>
+      <th scope="col">Sil</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each haber}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.id}}</td>
+      <td>{{this.tittle}}</td>
+      <td><form action="/admin/haber/{{this.id}}?_method=DELETE" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <button type="submit" class="btn btn-danger">Sil</button>
+      </form></td>
+
+     
+    </tr>
+   {{/each}}
+  </tbody>
+</table>
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>

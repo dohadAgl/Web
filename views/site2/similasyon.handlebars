@@ -1,0 +1,144 @@
+{{> site-nav}}
+{{>index-img}}
+
+
+<div class="container">
+  <div class="row">
+    <div class="index-info1-top col-md-12 col-lg-6">
+      <img src="/img/dalga.jpg" alt="">
+    </div>
+    <div class="index-info-text  col-md-12 col-lg-6">
+      <h1>DEPREM DALGALRI NASIL ALGILANIR</h1>
+      <p>Deprem dalgaları arasında en hızlı hareket eden deprem dalgalarına P dalgaları denir. P İngilizce primary
+        (ilk veya birincil) anlamındadır, çünkü uzakta meydana gelen bir depremden bir sismografa ulaşan ilk
+        dalgalar bu dalgalardır. Yeryüzünün yüzeyinde P dalgalarının hızı saniyede 5 km ila 8 km arasında
+        değişir. Gezegenimizin derinliklerinde ise, basınç ve öz kütle daha fazla olduğu için, P dalgaları 13
+        km/saniye hıza kadar ulaşabilir. Bu nedenle şiddeti de oldukça yüksek hissedilebilir.</p>
+      <p>
+        P dalgaları kayaların içinde, tıpkı sesin havada hareket ettiği gibi hareket ederler. Yani P dalgaları da basınç
+        dalgalarıdır, dolayısıyla bunlar boyuna dalgalardır. P dalgaları bir noktadan geçerken bu noktadaki
+        madde önce ileri sonra geri hareket eder.
+      </p>
+      <p>
+        P dalgaları deprem dalgalarının en hızlı yayılan türüdür P
+        dalgaları, aynı ses dalgaları gibi, katılarda, sıvılarda ve gazlarda hareket edebilir. Bu özellik, P
+        dalgalarıyla diğer deprem dalgaları arasındaki önemli farklardan biridir. Diğer deprem dalgaları
+        genellikle sadece katılarda yani kayalarda hareket eder.</p>
+
+
+    </div>
+
+
+  </div>
+</div>
+<hr>
+<br>
+<div class="container">
+  <div class="row">
+
+    <div class="index-info-text  col-md-12 col-lg-6">
+      <h1>SINIRLAMALAR</h1>
+      <ul>
+        <li>Deprem erken uyarısı, deprem tahmini değildir.</li>
+        <li>Alarm deprem başlamadan önce gelemez.</li>
+        <li>Amaç, insanların titreme hissetmeden uyarıyı almalarıdır.</li>
+        <li>İnsanlar, yerlerine sallama gelmeden önce, sırasında veya sonra bir uyarı alabilir.</li>
+        <li>Uyarının uzunluğu bir dizi faktöre bağlıdır. Faktörler arasında sismik sensörlerin birbirine ne kadar yakın
+          olduğu, verilerin sistem içinde ne kadar hızlı hareket ettiği (her gün hızlandırmak için çalışıyoruz),
+          depremin ne kadar büyük olduğu, yerin ne kadar derininde başladığı ve hareket edip etmediği sayılabilir. kum,
+          katı zemin veya ana kaya yoluyla.</li>
+        <li>Türkiye Deprem Erken Uyarı Sistemi, zaman içinde gelişecek olan yenilikçi teknolojiye dayanmaktadır.</li>
+        <li>Nadir durumlarda, deprem olmadığında bir ShakeAlert ® alabilirsiniz .</li>
+      </ul>
+
+
+    </div>
+    <div class="index-info1-top col-md-12 col-lg-6">
+      <img style="margin-top: 50px;" src="/img/caru.jpg" alt="">
+    </div>
+
+  </div>
+</div>
+
+<br><br>
+<div class="container">
+  <div class="row">
+
+    <div class="index-info-text  col-md-12 col-lg-6">
+      <h2 class="p-3">DEMO İLE TEST ET</h2>
+      <ul>
+        <li>İlk olarak harita üzerinde duran marmara bölgesinde deprem olma olasılığı yüksek olan mevkilerden birini
+          secin mavi iconların üzerine tıklayarak seçebilirsiniz</li>
+        <li>İkinci olarak Yaşadığınız Bölgeyi secmelisiniz yaşadığınız bölgenin üzerine tıklayarak secebilirsiniz
+          seçtiğiniz böldede ev iconu cıkacaktır </li>
+        <li>Bu adımları Yaptıktan sonra başlata Tıklayarak Deprem similasyonunu Başlatabilirsiniz</li>
+
+      </ul>
+
+
+    </div>
+    <div id="firstBox" class="index-info1-top col-md-12 col-lg-6">
+      <div id="box"></div>
+    </div>
+
+  </div>
+</div>
+
+
+  <div class="topBox">
+    <div class="sayac container">
+      <div class="container">
+      <p id="topInfo">Lütfen yaşadığınız bölgeyi işaretleyin ve deprem olma olasılığı en yüksek olan yerlerden birini
+        seçin seçilen bölge kırmızı olaçaktır daha sonra başlata tıklayın</p>
+      <span id="say">....</span>
+    </div>
+</div>
+  </div>
+<div id="harita">
+
+</div>
+
+
+
+
+<div class="btn-box">
+  <button id="durulan">DURDUR</button>
+<button id="baslaulan">BAŞLAT</button>
+<button id="baslat">BAŞLAT</button>
+<button id="yenile">TEKRAR DENE</button>
+</div>
+<br><br>
+<div class="container">
+  <h2 class="p-3">DEMODA GERÇEKLEŞEN SENARYO</h2>
+  <ul>
+    <li>Saniyede 5-9km hızla yükselen kırmızı p dalgasını yani önçü işareti istasyonlar algıladığı zaman sayaç başlar ve
+      alarm gönderilir</li>
+    <li>Arkasından 3-5km hızla yükselen s dalgası yıkıcı dalga yaşadığınız bölgeye gelene kadar sayac saymaya devam eder
+      ve çıkan sonuç erken uyarını seçtiğiniz deprem bölgesinde bir deprem olma durumunda depremden ortalama kaç saniye
+      önce uyarılaçağınızı belirler </li>
+    <li>Tekrar denemek için lütfen haritayı sıfırlayın</li>
+
+  </ul>
+</div>
+<br><br>
+{{!-- <div class="container">
+<h2 class="partnerTittle"> SİSTEM OPERASYON ORTAKLARI</h2>
+  <div class="partner">
+    <div><img src="/img/tekirdag.png" alt=""></div>
+    <div><img src="/img/silivri.png" alt=""></div>
+    <div><img src="/img/bakırköy.jpg" alt=""></div>
+    <div><img src="/img/kucukcekmece.jpg" alt=""></div>
+   
+  </div>
+</div>
+<br><br> --}}
+{{> site-footer}}
+
+
+
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+{{!-- leaflet.js harita kütüphane --}}
+<script src="/js/similasyon.js"></script>

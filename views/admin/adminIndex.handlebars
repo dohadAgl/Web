@@ -1,0 +1,118 @@
+
+
+
+<div style="display: flex;">
+{{>admin-nav  }}
+
+
+<div class="right-box">
+
+    {{#if sessionFlash.message}}
+<div class="{{sessionFlash.type}}">{{sessionFlash.message}}</div>
+{{/if}}
+
+
+
+
+<div>
+    <div >
+    <h3>Ana Sayfa</h3>
+<form action="/admin/index" method="POST" enctype="multipart/form-data">
+{{#each data}}
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Başlık</label>
+    <textarea id="textare" name="title" class="form-control"  rows="2" >{{this.title}}</textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">paragraf 1</label>
+    <textarea  id="textare" name="p1" class="form-control"  rows="6">{{this.p1}}</textarea>
+  </div>
+
+    <div class="form-group">
+    <label for="exampleFormControlTextarea1">paragraf 2</label>
+    <textarea id="textare" name="p2" class="form-control"  rows="6">{{this.p2}}</textarea>
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlTextarea1">satır 1 başlık</label>
+    <textarea id="textare" name="s1b" class="form-control"  rows="2">{{this.s1b}}</textarea>
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlTextarea1">satır 1</label>
+    <textarea id="textare" name="s1m" class="form-control"  rows="4"> {{this.s1m}}</textarea>
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlTextarea1">satır 2 başlık</label>
+    <textarea id="textare" name="s2b" class="form-control"  rows="2">{{this.s2b}}</textarea>
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlTextarea1">satır 2</label>
+    <textarea id="textare" name="s2m" class="form-control"  rows="4">{{this.s2m}}</textarea>
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlTextarea1">satır 3 başlık</label>
+    <textarea id="textare" name="s3b" class="form-control"  rows="2"> {{this.s3b}}</textarea>
+  </div>
+     <div class="form-group">
+    <label for="exampleFormControlTextarea1">satır 3</label>
+    <textarea id="textare" name="s3m" class="form-control"  rows="4">{{this.s3m}}</textarea>
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlTextarea1">satır 4 başlık</label>
+    <textarea id="textare" name="s4b" class="form-control"  rows="2">{{this.s4b}}</textarea>
+  </div>
+     <div class="form-group">
+    <label for="exampleFormControlTextarea1">satır 4</label>
+    <textarea id="textare" name="s4m" class="form-control"  rows="4">{{this.s4m}}</textarea>
+  </div>
+
+   <div class="form-group">
+    <label for="exampleFormControlTextarea1">test et kart</label>
+    <textarea id="textare" name="testEt" class="form-control"  rows="4">{{this.testEt}}</textarea>
+  </div>
+
+     <div class="form-group">
+    <label for="exampleFormControlTextarea1">nasıl kullanabilirim kart</label>
+    <textarea id="textare" name="nasilK" class="form-control"  rows="4">{{this.nasilK}}</textarea>
+  </div>
+
+   <div class="form-group">
+    <label for="exampleFormControlTextarea1">bilgi edin kart</label>
+    <textarea id="textare" name="bilgiEdin" class="form-control"  rows="4">{{this.bilgiEdin}}</textarea>
+  </div>
+
+     <div class="form-group">
+    <label for="exampleFormControlTextarea1">video başlık</label>
+    <textarea id="textare" name="vb" class="form-control"  rows="4">{{this.vb}}</textarea>
+  </div>
+   <div class="form-group">
+    <label for="exampleFormControlTextarea1">video metin </label>
+    <textarea id="textare" name="vm" class="form-control"  rows="4">{{this.vm}}</textarea>
+  </div>
+   <div class="form-group">
+    <label for="exampleFormControlTextarea1">pdf metin</label>
+    <textarea id="textare" name="pdf" class="form-control"  rows="4">{{this.pdf}}</textarea>
+  </div>
+
+{{/each}}
+<br>
+<br>
+<button id="haberbtn" type="submit">Güncelle</button>
+
+</form> 
+
+</div>
+
+
+{{!-- 
+<div  >
+     <h3>Yayında Olan Metinler</h3>
+  
+</div> --}}
+
+</div>
+
+
+</div>
+
+
+</div>

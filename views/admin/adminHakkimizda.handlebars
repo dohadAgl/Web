@@ -1,0 +1,64 @@
+
+
+
+<div style="display: flex;">
+{{>admin-nav  }}
+
+
+<div class="right-box">
+
+    {{#if sessionFlash.message}}
+<div class="{{sessionFlash.type}}">{{sessionFlash.message}}</div>
+{{/if}}
+
+
+
+
+<div>
+    <div >
+    <h3>Hakkımızda</h3>
+<form action="/admin/hakkimizda" method="POST" enctype="multipart/form-data">
+ {{#each hakkimizda}}
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Metin 1</label>
+    <textarea id="textare" name="hakkimizdaText1" class="form-control"  rows="6" >{{this.hakkimizdaText1}}</textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Metin 2</label>
+    <textarea  id="textare" name="hakkimizdaText2" class="form-control"  rows="6">{{this.hakkimizdaText2}}</textarea>
+  </div>
+
+    <div class="form-group">
+    <label for="exampleFormControlTextarea1">Metin 3</label>
+    <textarea id="textare" name="hakkimizdaText3" class="form-control"  rows="6">{{this.hakkimizdaText3}}</textarea>
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlTextarea1">Misyon</label>
+    <textarea id="textare" name="misyon" class="form-control"  rows="4">{{this.misyon}}</textarea>
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlTextarea1">Vizyon</label>
+    <textarea id="textare" name="vizyon" class="form-control"  rows="4">{{this.vizyon}}</textarea>
+  </div>
+<br>
+<br>
+<button id="haberbtn" type="submit">Güncelle</button>
+{{/each}}
+</form> 
+
+</div>
+
+
+
+<div  >
+     <h3>Yayında Olan Metinler</h3>
+  
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>

@@ -1,0 +1,59 @@
+.left-bar {
+    width: 250px;
+    height: 100%;
+    min-height: 100vh;
+    background: rgba(8, 8, 119, 0.907);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.left-bar h2 {
+    font-weight: 400;
+    font-size: 23px;
+
+}
+
+.left-bar li {
+    list-style-type: none;
+    margin: auto;
+    text-align: left;
+}
+
+.left-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+.right-box {
+    width: 100%;
+}
+
+.right-box>div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.right-box>div div {
+    width: 45%;
+    min-width: 490px;
+    
+    margin: 10px;
+}
+
+
+
+#haberbtn {
+    width: 120px;
+    height: 40px;
+    background: rgba(8, 8, 119, 0.907);
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    font-size: 13px;
+    border-radius: 5px;
+
+
+}

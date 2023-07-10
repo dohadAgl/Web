@@ -1,0 +1,17 @@
+.loginSayfa{
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 30px;
+    margin-top: 120px;
+}
+.registerSayfa{
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 30px;
+    margin-top: 50px;
+}
+

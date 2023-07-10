@@ -1,0 +1,22 @@
+{{#if sessionFlash.message}}
+<div class="{{sessionFlash.type}}">{{sessionFlash.message}}</div>
+{{/if}}
+<div class="loginSayfa">
+
+    <form class="form-signin" action="/admin" method="POST">
+      <img class="mb-4" src="/img/lga-logo-black.png" alt="" width="82" height="82">
+      <h1 class="h3 mb-3 font-weight-normal">Admin Login</h1>
+     
+      <input type="text" id="inputEmail" name="email" class="form-control" placeholder="Kullanıcı Adı" required="" autofocus="">
+      <br>
+      
+      <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" >
+     <br>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Giriş Yap</button>
+      <br>
+    
+     
+    </form>
+  
+</div>
+

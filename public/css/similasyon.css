@@ -1,0 +1,123 @@
+#harita {
+    margin: auto;
+    height: 500px;
+    width: 85%;
+    position: relative;
+}
+
+.btn-box button{
+
+    width: 50%;
+    height: 50px;
+    display: block;
+
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(118, 136, 190, 0.899);
+    border-radius: 2px;
+    border: 1px solid white;
+    letter-spacing: 2px;
+}
+
+#baslaulan{
+    display: none;
+}
+#durulan{
+    display: none;
+
+}
+
+.btn-box {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.topBox {
+
+    width: 85%;
+ margin: auto;
+   
+    text-align: center;
+}
+
+.sayac {
+    width: 100%;
+    margin: auto;
+
+    background: rgba(246, 28, 28, 0.626);
+
+}
+
+.deprembilgi {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    min-height: 300px;
+    background: rgba(248, 17, 17, 0.682);
+
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(239, 205, 205);
+    border-radius:10px;
+    margin: auto;
+}
+
+.deprembilgi span {
+    font-size: 19px;
+
+    font-weight: 600;
+    color: white;
+}
+
+.sayac p {
+    font-size: 19px;
+    font-weight: 700;
+
+    color: rgb(243, 234, 234);
+
+}
+
+.sayac span {
+    font-size: 23px;
+
+    font-weight: 800;
+    color: white;
+}
+
+#removeInfo {
+    float: right;
+}
+
+
+.chart-container {
+    border: 2px solid black;
+    fill: red;
+}
+
+.izgara {
+    stroke: rgba(125, 69, 36, 0.444);
+    stroke-width: 0.7;
+}
+
+.rectt {
+    fill: none;
+    stroke: rgba(34, 13, 13, 0.744);
+    stroke-width: 1.1;
+
+}
+
+.grafik {
+    fill: none;
+    stroke: rgba(34, 32, 184, 0.712);
+    stroke-width: 0.9;
+}
+
+.baslik {
+
+    font-family: sans-serif;
+    stroke-width: 2px;
+    stroke: black;
+}

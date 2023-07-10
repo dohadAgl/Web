@@ -1,0 +1,165 @@
+<div id="box-header">
+
+    <div id="top-nav">
+        <div class=" container d-flex">
+            <i id="small-menu-icon" class="fa-solid fa-bars d-block d-lg-none"></i>
+            <ul id="nav-contact" class="d-none d-lg-flex">
+                <a href="tel://+9021237615 64">
+                    <li><i class="fa-solid fa-phone fa-xl"></i> {{navLink.phone}}</li>
+                </a>
+                <a href="https://wa.me/905323761564" target="_blank">
+                    <li><i class="fa-brands fa-whatsapp fa-xl"></i> {{navLink.whatsaap}}</li>
+                </a>
+                <a href="mailto:{{navLinks.email}}">
+                    <li><i class="fa-solid fa-envelope fa-xl"></i>{{navLink.email}}</li>
+                </a>
+            </ul>
+            <ul class="nav-social-media">
+                <a href="{{navLink.facebook}}" target="_blank">
+                    <li><i class="fab fa-facebook-f"></i></li>
+                </a>
+                <a href="{{navLink.instagram}}" target="_blank">
+                    <li><i class="fab fa-instagram"></i></li>
+                </a>
+                <a href="{{navLink.twitter}}" target="_blank">
+                    <li><i class="fab fa-twitter"></i></li>
+                </a>
+                <a href="/iletisim">
+                    <li><i class="fab fa-google"></i></li>
+                </a>
+
+            </ul>
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="mobil-nav">
+
+        <ul class="mobil-all-list">
+            <a href="/">
+                <li>Ana Sayfa</li>
+            </a>
+
+            <a href="/similasyon">
+                <li style="background: #252525;">Nasıl<b style="color: transparent;">.</b>Calışır</li>
+            </a>
+            <a href="/urunler">
+                <li class="product-mobil-list">Ürünlerimiz
+                </li>
+            </a>
+
+            <a href="/haber">
+                <li style="background: #252525;">Blog&Haber</li>
+            </a>
+            <a href="/warning">
+                <li>Uyarı Alın</li>
+            </a>
+            <a href="/hakkimizda">
+                <li style="background: #252525;">Hakkımızda</li>
+            </a>
+            <a href="/iletisim">
+                <li>İletişim</li>
+            </a>
+            {{#unless displayLink}}
+            <a href="/users/login">
+                <li style="background: #252525;">Giriş Yap</li>
+            </a>
+            {{/unless}}
+            {{#if displayLink}}
+            <a href="/users/logout">
+                <li style="background: #252525;">Çıkış Yap</li>
+            </a>
+            {{/if}}
+        </ul>
+    </div>
+
+
+
+
+    <div id="bottom-nav" class=" d-none d-lg-flex">
+        <a href="/">
+            <div class="lga_logo">
+                <img src="/img/logoNew.png">
+            </div>
+        </a>
+        <ul class="bottom-nav-ul">
+
+            <a href="/warning">
+                <li><i class="bi bi-exclamation-triangle-fill"></i>Uyarılar<b style="color: transparent;">.</b>Alın</li>
+            </a>
+            <a href="/hazir">
+                <li><i class="bi bi-clipboard2-pulse-fill"></i>Hazırlanın</li>
+            </a>
+            <a href="/similasyon">
+
+                <li><i class="bi bi-gear-fill"></i>Nasıl<b style="color: transparent;">.</b>Çalışır</li>
+            </a>
+            <a href="/urunler">
+                <li><i class="bi bi-bag-check-fill"></i> Ürünlerimiz</li>
+            </a>
+            <a href="/haber">
+                <li><i class="bi bi-megaphone-fill"></i>Blog&Haber</li>
+            </a>
+            <a href="/hakkimizda">
+                <li><i class="bi bi-file-earmark-person-fill"></i>Hakkımızda</li>
+            </a>
+            <a href="#">
+                <li id="nav-search"><i class="bi bi-search"></i>Arama Yap</li>
+            </a>
+
+            {{#unless displayLink}}
+            <a href="/users/login">
+                <li><i class="bi bi-door-open-fill"></i>Giriş<b style="color: transparent;">.</b>Yap</li>
+            </a>
+            {{/unless}}
+            {{#if displayLink}}
+            <a href="/users/logout">
+                <li><i class="bi bi-door-closed-fill"></i>Çıkış<b style="color: transparent;">.</b>Yap</li>
+            </a>
+            {{/if}}
+
+
+
+
+        </ul>
+    </div>
+
+
+</div>
+<form action="/search" method="POST">
+    <div id="searchIndex">
+
+        <div class="form-outline" id="uyuy">
+            <input type="search" id="form1" name="search" class="form-control" placeholder="Arama Yap" />
+
+        </div>
+        <button type="submit">
+            <i class="fas fa-search"></i>
+        </button>
+
+    </div>
+</form>
+
+<br><br>
+<div class="container">
+
+    <div class="container">
+{{#each data}}
+        <div class="container">
+<a href="{{this.link}}">
+
+            <span class="searchTextFirst">{{this.title}}</span></a>
+            <p class="searchUrl">sismikalarm.com.tr{{this.link}}</p>
+            <p class="searchTextLast">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus blanditiis,
+                neque sapiente tempora qui dicta?</p>
+        </div>
+
+   {{/each}}
+
+   
+    </div>
+</div>

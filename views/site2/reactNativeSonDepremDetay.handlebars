@@ -1,0 +1,50 @@
+<div id="harita" style="width: 100%; height: 200px;">
+    
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+{{!-- leaflet.js harita kütüphane --}}
+{{!--
+<script src="/js/similasyon.js"></script> --}}
+
+
+{{!-- <script src="/js/L.KML.js"></script> --}}
+
+<script>
+    var harita = L.map('harita', {}).setView([40.89379029959048, 29.386206559532354], 8);
+
+    var OpenStreetMap_HOT = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        maxZoom: 10,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
+    }).addTo(harita);
+
+
+
+    // KML dosyasını yükleme işlevi
+    /* fetch('/kml/mta_diri_fay_haritasi.kml')
+        .then(res => res.text())
+        .then(kmltext => {
+            // Create new kml overlay
+            const parser = new DOMParser();
+            const kml = parser.parseFromString(kmltext, 'text/xml');
+            const track = new L.KML(kml);
+            harita.addLayer(track);
+
+            // Adjust map to show the kml
+            const bounds = track.getBounds();
+            harita.fitBounds(bounds);
+        }); */
+
+
+    // Load the GeoJSON data
+    fetch('/kml/mta_diri_fay_haritasi.geojson')
+        .then(response => response.json())
+        .then(data => {
+            // Create a Leaflet GeoJSON layer
+            L.geoJSON(data).addTo(harita);
+        });
+
+
+</script>
